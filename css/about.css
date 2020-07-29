@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #ffffff;
+    overflow: hidden; /* Hide scrollbars */
+}
+
+.header{
+    height: 100vh;
+    background-position: center;
+    background-size: auto;
+    background-color: black;
+    position: relative;
+    
+    backface-visibility: hidden;
+} 
+.heading-primary{
+    text-transform: uppercase;
+    line-height: 1.4;
+    font-size: 4.5vw;
+    font-weight: 700;
+    letter-spacing: .4vw;
+    position: absolute;
+    right: 2.5%;
+    left: 2.5%;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+.heading-primary-right{
+    display: block;
+    text-align: left;
+    animation: close .2s ease ;
+    animation-fill-mode: forwards;
+
+}
+
+.heading-primary-left{
+    display: block ;
+    text-align: right;
+    animation: close .2s ease ;
+    animation-fill-mode: forwards;
+    
+    
+
+}
+.button{
+    text-transform: uppercase;
+    line-height: 1.4;
+    font-size: 02vw;
+    font-weight: 700;
+    letter-spacing: .5vw;
+    text-align:center;
+    padding: 1.5vh;
+    width: 30%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    
+
+}
+.link:link,
+.link:visited{
+    text-decoration: none;
+    color: white;
+    animation: close .2s ease-out ;
+    animation-fill-mode: forwards;
+
+}
+
+.link.bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 1.5vh;
+}
+
+@keyframes close{
+    0%{
+        opacity: 1;
+
+    }
+    100%{
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+
+}
+
+.para{ 
+    line-height: 2;
+    font-size: 1.5vw;
+    font-weight: 700;
+    letter-spacing: .4vw;
+    position: absolute;
+    right: 2.5%;
+    left: 2.5%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 45%;
+    float: left;
+    animation: show .6s .3s ease-out;
+    animation-fill-mode: backwards;
+}
+
+.para div {
+    font-weight: bolder;
+    font-size: 1.8vw;
+    text-transform: uppercase;
+}
+
+.connect{
+    line-height: 2;
+    font-size: 2vw;
+    font-weight: 900;
+    letter-spacing: .4vw;
+    position: absolute;
+    right: 2.5%;
+    text-align: right;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    animation: show .6s .3s ease-out;
+    animation-fill-mode: backwards;
+
+}
+
+.contact{
+    display: block;
+}
+
+
+.instagram:link,
+.instagram:visited{
+    text-decoration: none;
+    color: white;
+    
+
+}
+.button1{
+    text-transform: uppercase;
+    line-height: 1.4;
+    font-size: 02vw;
+    font-weight: 700;
+    letter-spacing: .5vw;
+    position: absolute;
+    top: 2.5%;
+    left: 2.5%;
+
+}
+.link1:link,
+.link1:visited{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    animation: show .6s .3s ease-out;
+    animation-fill-mode: backwards;
+
+
+}
+
+
+@keyframes show{
+    0%{
+        opacity: 0;
+        
+    }
+    100%{
+        opacity: 1;
+    }
+
+
+}
+
+
+

@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #ffffff;
+    overflow: hidden; /* Hide scrollbars */
+}
+
+.header{
+    height: 100vh;
+    background-position: center;
+    background-size: auto;
+    background-color: black;
+    position: relative;
+    
+    backface-visibility: hidden;
+} 
+
+.heading-primary{
+    text-transform: uppercase;
+    line-height: 1.4;
+    font-size: 4.5vw;
+    font-weight: 700;
+    letter-spacing: .4vw;
+    position: absolute;
+    right: 2.5%;
+    left: 2.5%;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+.heading-primary-right{
+    display: block;
+    text-align: left;
+    animation: moveLeft 1s ease-in ;
+
+}
+
+.heading-primary-left{
+    display: block ;
+    text-align: right;
+    animation: moveRight 1s ease-in ;
+    
+
+}
+
+.button{
+    text-transform: uppercase;
+    line-height: 1.4;
+    font-size: 02vw;
+    font-weight: 700;
+    letter-spacing: .5vw;
+    text-align:center;
+    padding: 1.5vh;
+    animation: show .7s ease-in 1s;
+    animation-fill-mode: backwards;
+    width: 30%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    
+
+}
+.link:link,
+.link:visited{
+    text-decoration: none;
+    transition: all .4s ease-in;
+    color: white;
+
+}
+
+.link.bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 1.5vh;
+}
+
+
+.link:hover{
+    transform:scale(1.1);
+    letter-spacing: 2vw;
+}
+
+
+
+@keyframes moveRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-25%);
+        transform: scale(0.7); 
+    }
+    
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+
+
+}
+@keyframes moveLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(25%);
+        transform: scale(0.7);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+@keyframes show{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+
+}
